@@ -45,6 +45,8 @@ const ROOMS = {
 
 const ROOM_ORDER = [ROOM_IDS.bedroom];
 const SECOND_FLOOR_LAYOUT = {
+  baseRoomWidth: 640,
+  baseRoomHeight: 694,
   xOffset: 154,
   yOffset: 185,
   widthInset: 192,
@@ -1319,10 +1321,12 @@ function syncSecondFloor() {
     secondFloorToken.interactiveChildren = false;
   }
 
-  secondFloorToken.x = room.x + SECOND_FLOOR_LAYOUT.xOffset;
-  secondFloorToken.y = room.y + SECOND_FLOOR_LAYOUT.yOffset;
-  secondFloorToken.width = room.width - SECOND_FLOOR_LAYOUT.widthInset;
-  secondFloorToken.height = room.height - SECOND_FLOOR_LAYOUT.heightInset;
+  const secondFloorScaleX = room.width / SECOND_FLOOR_LAYOUT.baseRoomWidth;
+  const secondFloorScaleY = room.height / SECOND_FLOOR_LAYOUT.baseRoomHeight;
+  secondFloorToken.x = room.x + SECOND_FLOOR_LAYOUT.xOffset * secondFloorScaleX;
+  secondFloorToken.y = room.y + SECOND_FLOOR_LAYOUT.yOffset * secondFloorScaleY;
+  secondFloorToken.width = room.width - SECOND_FLOOR_LAYOUT.widthInset * secondFloorScaleX;
+  secondFloorToken.height = room.height - SECOND_FLOOR_LAYOUT.heightInset * secondFloorScaleY;
   secondFloorToken.visible = state.showSecondFloor;
   if (!secondFloorToken.parent) {
     itemLayer.addChild(secondFloorToken);
