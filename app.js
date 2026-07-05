@@ -1,4 +1,4 @@
- const ROOM_ASSETS = {
+const ROOM_ASSETS = {
   firstFloor: "assets/first-floor-transparent.png",
   secondFloor: "assets/second-floor.png",
 };
@@ -122,6 +122,12 @@ const DESKTOP_LAYOUT_LIMITS = {
   roomBaseMaxWidth: 640,
   roomMaxWidth: 1080,
   roomViewportFactor: 0.32,
+};
+
+const PANEL_TOUCH_SCROLL = {
+  lockDistance: 8,
+  dragDistance: 10,
+  horizontalBias: 1.15,
 };
 
 const SCENE_LAYERS = {
@@ -1661,14 +1667,42 @@ function makeItemCard(item, x, y, width, height) {
   card.on("pointerdown", (event) => {
     if (event.button !== 0) return;
     event.stopPropagation();
-    activeDrag = { type: "palette", itemId: item.id };
-    dragGhost = makePlacedToken(item, 1);
-    dragGhost.alpha = 0.86;
-    dragLayer.addChild(dragGhost);
-    positionDragGhost(event.global.x, event.global.y);
+    startPalettePointer(event, item);
   });
 
   return card;
+}
+
+function startPalettePointer(event, item) {
+  const point = { x: event.global.x, y: event.global.y };
+  if (layout?.panel?.horizontal) {
+    activeDrag = {
+      type: "palette-candidate",
+      itemId: item.id,
+      pointerId: event.pointerId,
+      startX: point.x,
+      startY: point.y,
+      startScroll: state.panelScroll,
+    };
+    return;
+  }
+  startPaletteDrag(item, point);
+}
+
+function startPaletteDrag(item, point) {
+  activeDrag = { type: "palette", itemId: item.id };
+  dragGhost = makePlacedToken(item, 1);
+  dragGhost.alpha = 0.86;
+  dragLayer.addChild(dragGhost);
+  positionDragGhost(point.x, point.y);
+}
+
+function updatePanelSwipeScroll(point) {
+  const maxScroll = layout?.panelContent?.maxScroll || 0;
+  if (maxScroll <= 0) return;
+  const dx = point.x - activeDrag.startX;
+  state.panelScroll = clamp(activeDrag.startScroll - dx, 0, maxScroll);
+  requestRender();
 }
 
 function drawModal() {
@@ -1943,6 +1977,35 @@ function onPointerMove(event) {
   const point = eventPoint(event);
   positionDragGhost(point.x, point.y);
 
+  if (activeDrag.type === "palette-candidate") {
+    const dx = point.x - activeDrag.startX;
+    const dy = point.y - activeDrag.startY;
+    const absX = Math.abs(dx);
+    const absY = Math.abs(dy);
+    if (
+      (layout?.panelContent?.maxScroll || 0) > 0 &&
+      absX >= PANEL_TOUCH_SCROLL.lockDistance &&
+      absX > absY * PANEL_TOUCH_SCROLL.horizontalBias
+    ) {
+      event.preventDefault?.();
+      activeDrag.type = "panel-scroll";
+      updatePanelSwipeScroll(point);
+      return;
+    }
+    if (absY >= PANEL_TOUCH_SCROLL.dragDistance || !pointInPanel(point.x, point.y)) {
+      const item = ITEMS.find((candidate) => candidate.id === activeDrag.itemId);
+      if (item) startPaletteDrag(item, point);
+      return;
+    }
+    return;
+  }
+
+  if (activeDrag.type === "panel-scroll") {
+    event.preventDefault?.();
+    updatePanelSwipeScroll(point);
+    return;
+  }
+
   if (activeDrag.type === "camera-pan") {
     state.camera.x = activeDrag.startCameraX + point.x - activeDrag.startX;
     state.camera.y = activeDrag.startCameraY + point.y - activeDrag.startY;
@@ -2055,6 +2118,12 @@ function onPointerUp(event) {
   if (!activeDrag) return;
   const finishedDragType = activeDrag.type;
   const point = eventPoint(event);
+  if (finishedDragType === "panel-scroll" || finishedDragType === "palette-candidate") {
+    activeDrag = null;
+    dragGhost = null;
+    requestRender();
+    return;
+  }
   let sceneChanged = finishedDragType !== "palette";
 
   if (finishedDragType === "palette" && pointInRoom(point.x, point.y)) {
@@ -2198,6 +2267,7 @@ function updateDebugState() {
     appNode.dataset.placedState = JSON.stringify(state.placed);
     appNode.dataset.showSecondFloor = String(state.showSecondFloor);
     appNode.dataset.modalItemId = state.modalItemId || "";
+    appNode.dataset.panelScroll = String(state.panelScroll);
     appNode.dataset.storageKey = STORAGE_KEY;
     appNode.dataset.storageSync = storageStatus;
     appNode.dataset.storageLastSavedAt = storageLastSavedAt;
@@ -2206,6 +2276,9 @@ function updateDebugState() {
       appNode.dataset.room = JSON.stringify(layout.room);
       appNode.dataset.panel = JSON.stringify(layout.panel);
       appNode.dataset.switchBox = JSON.stringify(layout.switchBox);
+      appNode.dataset.panelContent = layout.panelContent
+        ? JSON.stringify(layout.panelContent)
+        : "";
       appNode.dataset.secondFloor = layout.secondFloor
         ? JSON.stringify(layout.secondFloor)
         : "";
@@ -2223,6 +2296,7 @@ function updateDebugState() {
     placedState: state.placed,
     showSecondFloor: state.showSecondFloor,
     modalItemId: state.modalItemId,
+    panelScroll: state.panelScroll,
     storageKey: STORAGE_KEY,
     storageSync: storageStatus,
     storageLastSavedAt,
@@ -2235,6 +2309,7 @@ function updateDebugState() {
           desktop: layout.desktop,
           room: layout.room,
           panel: layout.panel,
+          panelContent: layout.panelContent,
           switchBox: layout.switchBox,
         }
       : null,
@@ -2284,6 +2359,7 @@ async function init() {
 
   document.querySelector("#app").append(app.canvas);
   app.canvas.setAttribute("aria-label", "Kassyaka room decorator Pixi game");
+  app.canvas.style.touchAction = "none";
 
   ITEMS = await loadItems();
   applyStoredSceneState(loadSceneState());
