@@ -1010,19 +1010,19 @@
         "height": 1254
       },
       "originalBbox": {
-        "x": 115,
+        "x": 116,
         "y": 240,
-        "width": 1037,
+        "width": 1036,
         "height": 763
       },
       "cropBox": {
         "x": 0,
         "y": 0,
-        "width": 1061,
+        "width": 1060,
         "height": 787
       },
       "size": {
-        "width": 1061,
+        "width": 1060,
         "height": 787
       }
     },
@@ -1043,18 +1043,49 @@
       "originalBbox": {
         "x": 297,
         "y": 85,
-        "width": 700,
+        "width": 699,
         "height": 671
       },
       "cropBox": {
         "x": 0,
         "y": 0,
-        "width": 724,
+        "width": 723,
         "height": 695
       },
       "size": {
-        "width": 724,
+        "width": 723,
         "height": 695
+      }
+    },
+    {
+      "file": "annie-mattress.png",
+      "id": "annie-mattress",
+      "name": "Матрасик",
+      "giver": "Энни Мур",
+      "gift": "Мягкий розовый матрасик",
+      "congrats": "Мисс Дэверо, поздравляю Вас с Днем рождения и желаю прекрасных минут, наполненных любовью, теплом и светом. Желаю чудес, приключений и бесконечного счастья!",
+      "roomMaxWidth": 126,
+      "roomMaxHeight": 84,
+      "asset": "assets/items/annie-mattress.png",
+      "originalSize": {
+        "width": 1280,
+        "height": 1024
+      },
+      "originalBbox": {
+        "x": 200,
+        "y": 218,
+        "width": 893,
+        "height": 592
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 917,
+        "height": 616
+      },
+      "size": {
+        "width": 917,
+        "height": 616
       }
     }
   ]

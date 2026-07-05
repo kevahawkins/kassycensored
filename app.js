@@ -3,7 +3,7 @@ const ROOM_ASSETS = {
   secondFloor: "assets/second-floor.png",
 };
 
-const ITEM_MANIFEST_PATH = "assets/items/items.json?v=20260705-censored-lion-knuckles";
+const ITEM_MANIFEST_PATH = "assets/items/items.json?v=20260705-censored-annie-mattress-edgefix";
 let ITEMS = [];
 
 const PALETTE = {
@@ -110,6 +110,16 @@ const CAMERA_LIMITS = {
   minZoom: 0.65,
   maxZoom: 2.2,
   maxPanFactor: 0.85,
+  panOverscanFactor: 0.12,
+};
+
+const DESKTOP_LAYOUT_LIMITS = {
+  panelMinWidth: 288,
+  panelMaxWidth: 430,
+  panelViewportFactor: 0.12,
+  roomBaseMaxWidth: 640,
+  roomMaxWidth: 1080,
+  roomViewportFactor: 0.32,
 };
 
 const SCENE_LAYERS = {
@@ -704,10 +714,47 @@ function clampCamera() {
     CAMERA_LIMITS.maxZoom,
   );
   if (!layout?.room) return;
-  const limitX = layout.room.width * CAMERA_LIMITS.maxPanFactor * state.camera.zoom;
-  const limitY = layout.room.height * CAMERA_LIMITS.maxPanFactor * state.camera.zoom;
-  state.camera.x = clamp(state.camera.x || 0, -limitX, limitX);
-  state.camera.y = clamp(state.camera.y || 0, -limitY, limitY);
+  const bounds = cameraPanBounds();
+  state.camera.x = clamp(state.camera.x || 0, bounds.minX, bounds.maxX);
+  state.camera.y = clamp(state.camera.y || 0, bounds.minY, bounds.maxY);
+}
+
+function cameraPanBounds() {
+  const zoom = state.camera.zoom || 1;
+  const room = layout.room;
+  const viewportLeft = layout.desktop ? layout.margin : 0;
+  const viewportRight = layout.desktop && layout.panel
+    ? layout.panel.x - 18
+    : layout.width;
+  const viewportTop = room.y;
+  const viewportBottom = layout.desktop
+    ? layout.height - layout.margin
+    : layout.panel?.y || layout.height;
+  const roomLeft = room.x * zoom;
+  const roomRight = (room.x + room.width) * zoom;
+  const roomTop = room.y * zoom;
+  const roomBottom = (room.y + room.height) * zoom;
+  const fitMinX = viewportRight - roomRight;
+  const fitMaxX = viewportLeft - roomLeft;
+  const fitMinY = viewportBottom - roomBottom;
+  const fitMaxY = viewportTop - roomTop;
+  const fallbackX = room.width * CAMERA_LIMITS.maxPanFactor * zoom;
+  const fallbackY = room.height * CAMERA_LIMITS.maxPanFactor * zoom;
+  const overscanX = Math.min(
+    layout.width * CAMERA_LIMITS.panOverscanFactor,
+    room.width * zoom * CAMERA_LIMITS.maxPanFactor,
+  );
+  const overscanY = Math.min(
+    layout.height * CAMERA_LIMITS.panOverscanFactor,
+    room.height * zoom * CAMERA_LIMITS.maxPanFactor,
+  );
+
+  return {
+    minX: Math.min(fitMinX, fitMaxX, -fallbackX) - overscanX,
+    maxX: Math.max(fitMinX, fitMaxX, fallbackX) + overscanX,
+    minY: Math.min(fitMinY, fitMaxY, -fallbackY) - overscanY,
+    maxY: Math.max(fitMinY, fitMaxY, fallbackY) + overscanY,
+  };
 }
 
 function applyCameraTransform() {
@@ -933,7 +980,11 @@ function computeLayout(width) {
   const mainTop = headerTop + topbarHeight + (desktop ? 18 : 14);
 
   if (desktop) {
-    const panelWidth = 288;
+    const panelWidth = Math.round(clamp(
+      width * DESKTOP_LAYOUT_LIMITS.panelViewportFactor,
+      DESKTOP_LAYOUT_LIMITS.panelMinWidth,
+      DESKTOP_LAYOUT_LIMITS.panelMaxWidth,
+    ));
     const gap = 18;
     const panelX = width - margin - panelWidth;
     const availableMainHeight = Math.max(
@@ -942,7 +993,12 @@ function computeLayout(width) {
     );
     const widthBoundRoomWidth = panelX - margin - gap;
     const heightBoundRoomWidth = availableMainHeight / roomRatio;
-    const maxRoomWidth = Math.min(640, widthBoundRoomWidth, heightBoundRoomWidth);
+    const responsiveRoomMaxWidth = clamp(
+      width * DESKTOP_LAYOUT_LIMITS.roomViewportFactor,
+      DESKTOP_LAYOUT_LIMITS.roomBaseMaxWidth,
+      DESKTOP_LAYOUT_LIMITS.roomMaxWidth,
+    );
+    const maxRoomWidth = Math.min(responsiveRoomMaxWidth, widthBoundRoomWidth, heightBoundRoomWidth);
     const roomWidth = Math.max(320, maxRoomWidth);
     const roomHeight = roomWidth * roomRatio;
     const roomAreaWidth = panelX - gap - margin;
