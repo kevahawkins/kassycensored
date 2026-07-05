@@ -1,4 +1,4 @@
-const ROOM_ASSETS = {
+ const ROOM_ASSETS = {
   firstFloor: "assets/first-floor-transparent.png",
   secondFloor: "assets/second-floor.png",
 };
