@@ -1,0 +1,1061 @@
+{
+  "version": 1,
+  "padding": 12,
+  "description": "Kassyaka room item assets. file is the current cropped PNG used by the app.",
+  "items": [
+    {
+      "file": "red-robe-hanger.png",
+      "id": "sirius-red-robe",
+      "name": "Красная мантия",
+      "giver": "Мистер Сириус Ормен",
+      "gift": "Красивая мантия красного цвета",
+      "congrats": "Кисси, поздравляю тебя с днем рождения! Чтобы здоровье твое никогда не мешало всем твоим начинаниям, а наоборот, чтобы оно было лучше всех! Удачи, терпенья, внсьлья и хороших друзей. С праздником!!! 🥰🎂🎉🎁",
+      "roomMaxWidth": 96,
+      "roomMaxHeight": 132,
+      "asset": "assets/items/red-robe-hanger.png",
+      "originalSize": {
+        "width": 513,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 513,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 513,
+        "height": 768
+      },
+      "size": {
+        "width": 513,
+        "height": 768
+      }
+    },
+    {
+      "file": "blanket.png",
+      "id": "natali-blanket",
+      "name": "Плед",
+      "giver": "Натали Снейп",
+      "gift": "Плед",
+      "congrats": "Касси, наша яркая, смелая и Талантлиыая звезда! :)\nОт всей души поздравляю тебя с Днем Рождения! Желаю исполнения всех твоих желаний, и лёгкой и красивой реализации любых идей:)\n Будь счастлива и любима. И пусть каждый день будет полон тепла, уюта, радости и самых позитивных эмоций. С праздником!",
+      "roomMaxWidth": 105,
+      "roomMaxHeight": 80,
+      "asset": "assets/items/blanket.png",
+      "originalSize": {
+        "width": 768,
+        "height": 609
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 609
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 609
+      },
+      "size": {
+        "width": 768,
+        "height": 609
+      }
+    },
+    {
+      "file": "planner.png",
+      "id": "natali-planner",
+      "name": "Ежедневник",
+      "giver": "Натали Снейп",
+      "gift": "Ежедневник",
+      "congrats": "Касси, наша яркая, смелая и Талантлиыая звезда! :)\nОт всей души поздравляю тебя с Днем Рождения! Желаю исполнения всех твоих желаний, и лёгкой и красивой реализации любых идей:)\n Будь счастлива и любима. И пусть каждый день будет полон тепла, уюта, радости и самых позитивных эмоций. С праздником!",
+      "roomMaxWidth": 90,
+      "roomMaxHeight": 90,
+      "asset": "assets/items/planner.png",
+      "originalSize": {
+        "width": 768,
+        "height": 763
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 763
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 763
+      },
+      "size": {
+        "width": 768,
+        "height": 763
+      }
+    },
+    {
+      "file": "alarm-clock.png",
+      "id": "natali-alarm-clock",
+      "name": "Будильник",
+      "giver": "Натали Снейп",
+      "gift": "Будильник",
+      "congrats": "Касси, наша яркая, смелая и Талантлиыая звезда! :)\nОт всей души поздравляю тебя с Днем Рождения! Желаю исполнения всех твоих желаний, и лёгкой и красивой реализации любых идей:)\n Будь счастлива и любима. И пусть каждый день будет полон тепла, уюта, радости и самых позитивных эмоций. С праздником!",
+      "roomMaxWidth": 68,
+      "roomMaxHeight": 86,
+      "asset": "assets/items/alarm-clock.png",
+      "originalSize": {
+        "width": 540,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 540,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 540,
+        "height": 768
+      },
+      "size": {
+        "width": 540,
+        "height": 768
+      }
+    },
+    {
+      "file": "galleons-stack-300.png",
+      "id": "dino-300-galleons",
+      "name": "300 галлеонов",
+      "giver": "Диночка",
+      "gift": "Пополнение счета на 300 галлеонов",
+      "congrats": "Моя любимая девочка! Доця моя! Поздравляю тебя с твоим днем рождения! Желаю тебе, чтобы исполнялись все твои желания! Крепкого здоровья, счастья, много галеонов и прекрасной любви 💖",
+      "roomMaxWidth": 92,
+      "roomMaxHeight": 92,
+      "asset": "assets/items/galleons-stack-300.png",
+      "originalSize": {
+        "width": 762,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 762,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 762,
+        "height": 768
+      },
+      "size": {
+        "width": 762,
+        "height": 768
+      }
+    },
+    {
+      "file": "plush-hug-toy.png",
+      "id": "dino-plush-hug-toy",
+      "name": "Плюш-обнимашка",
+      "giver": "Диночка",
+      "gift": "Плюшевая игрушка-обнимашка",
+      "congrats": "Моя любимая девочка! Доця моя! Поздравляю тебя с твоим днем рождения! Желаю тебе, чтобы исполнялись все твои желания! Крепкого здоровья, счастья, много галеонов и прекрасной любви 💖",
+      "roomMaxWidth": 82,
+      "roomMaxHeight": 82,
+      "asset": "assets/items/plush-hug-toy.png",
+      "originalSize": {
+        "width": 728,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 728,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 728,
+        "height": 768
+      },
+      "size": {
+        "width": 728,
+        "height": 768
+      }
+    },
+    {
+      "file": "tall-modular-shelf.png",
+      "id": "zhuzhu-tall-modular-shelf",
+      "name": "Стеллаж",
+      "giver": "Жужу ХдК",
+      "gift": "Стилёвый стеллаж для книг, ваз и кружек",
+      "congrats": "Привет, Кассия!\nПоздравляю тебя с днём рождения, ты классная и делаешь красивые вещи. Очень АэСтЕтИк. Возможно когда-нибудь я смогу сказать о тебе больше, но даже если нет, то желаю тебе красивостей, приятностей и счастливостей в жизни. Чего ты хочешь я не знаю, но надеюсь у тебя это будет/получится и т.д.",
+      "roomMaxWidth": 94,
+      "roomMaxHeight": 150,
+      "asset": "assets/items/tall-modular-shelf.png",
+      "originalSize": {
+        "width": 336,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 336,
+        "height": 768
+      },
+      "size": {
+        "width": 336,
+        "height": 768
+      }
+    },
+    {
+      "file": "pink-money-gun.png",
+      "id": "ariadna-pink-money-gun",
+      "name": "Розовый money gun",
+      "giver": "Ариадна Фрост",
+      "gift": "Розовый money gun",
+      "congrats": "Дорогая Касси, с днем рождения!\nВосхищаюсь тобой хоть издалека, но много и часто.\n\nБереги себя, girl, ты невероятная  ❤️",
+      "roomMaxWidth": 100,
+      "roomMaxHeight": 70,
+      "asset": "assets/items/pink-money-gun.png",
+      "originalSize": {
+        "width": 768,
+        "height": 492
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 492
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 492
+      },
+      "size": {
+        "width": 768,
+        "height": 492
+      }
+    },
+    {
+      "file": "chameleon.png",
+      "id": "dino-chameleon",
+      "name": "Хамелеон",
+      "giver": "Диночка",
+      "gift": "Хамелеон",
+      "congrats": "Моя любимая девочка! Доця моя! Поздравляю тебя с твоим днем рождения! Желаю тебе, чтобы исполнялись все твои желания! Крепкого здоровья, счастья, много галеонов и прекрасной любви 💖",
+      "roomMaxWidth": 74,
+      "roomMaxHeight": 82,
+      "asset": "assets/items/chameleon.png",
+      "originalSize": {
+        "width": 567,
+        "height": 706
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 567,
+        "height": 706
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 567,
+        "height": 706
+      },
+      "size": {
+        "width": 567,
+        "height": 706
+      }
+    },
+    {
+      "file": "open-etude-box.png",
+      "id": "helena-open-etude-box",
+      "name": "Открытый этюдник",
+      "giver": "Хелена Кейн",
+      "gift": "Складной открытый этюдник",
+      "congrats": "С Днем Рождения! Пусть твоя жизнь будет полна сюжетов и красок, а твои рисунки оставят множество твоих следов в этом мире! Будь счастлива",
+      "roomMaxWidth": 106,
+      "roomMaxHeight": 92,
+      "asset": "assets/items/open-etude-box.png",
+      "originalSize": {
+        "width": 649,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 649,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 649,
+        "height": 768
+      },
+      "size": {
+        "width": 649,
+        "height": 768
+      }
+    },
+    {
+      "file": "clover-amulet-chain.png",
+      "id": "grace-clover-amulet",
+      "name": "Амулет удачи",
+      "giver": "Грэйс Грейлэнд",
+      "gift": "Амулет на удачу с четырёхлистным клевером",
+      "congrats": "Дорогая Кассия, поздравляю тебя с завершением одного личного колеса года и началом нового) С Днём Рождения! Я не так хорошо с тобой знакома и не знаю, какой подарок придётся тебе по душе, но удача нужна абсолютно всем, поэтому пусть она всегда тебе сопутствует! Счастья и невероятного волшебства!",
+      "roomMaxWidth": 98,
+      "roomMaxHeight": 70,
+      "asset": "assets/items/clover-amulet-chain.png",
+      "originalSize": {
+        "width": 768,
+        "height": 475
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 475
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 475
+      },
+      "size": {
+        "width": 768,
+        "height": 475
+      }
+    },
+    {
+      "file": "wall-hook.png",
+      "id": "sirius-wall-hook",
+      "name": "Настенный крючок",
+      "giver": "Мистер Сириус Ормен",
+      "gift": "Настенный крючок для мантии",
+      "congrats": "Кисси, поздравляю тебя с днем рождения! Чтобы здоровье твое никогда не мешало всем твоим начинаниям, а наоборот, чтобы оно было лучше всех! Удачи, терпенья, внсьлья и хороших друзей. С праздником!!! 🥰🎂🎉🎁",
+      "roomMaxWidth": 50,
+      "roomMaxHeight": 95,
+      "asset": "assets/items/wall-hook.png",
+      "originalSize": {
+        "width": 369,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 369,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 369,
+        "height": 768
+      },
+      "size": {
+        "width": 369,
+        "height": 768
+      }
+    },
+    {
+      "file": "marmalade-gift-box.png",
+      "id": "felix-marmalade-box",
+      "name": "Мармелад",
+      "giver": "Феликс Морган",
+      "gift": "Мармелад в подарочной упаковке",
+      "congrats": "с днём рождения! пусть этот важный день порадует тебя приятными событиями, а предстоящий год будет складываться наилучшим образом",
+      "roomMaxWidth": 88,
+      "roomMaxHeight": 75,
+      "asset": "assets/items/marmalade-gift-box.png",
+      "originalSize": {
+        "width": 768,
+        "height": 713
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 713
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 713
+      },
+      "size": {
+        "width": 768,
+        "height": 713
+      }
+    },
+    {
+      "file": "galleons-pouch.png",
+      "id": "joanna-galleons-pouch",
+      "name": "Немного галлеонов",
+      "giver": "Джоанна Оттис",
+      "gift": "Галеоны, но их мало",
+      "congrats": "С днём рождения, Кассичка! Пусть этот особенный день принесёт тебе море улыбок, радости и счастья. Пусть каждый момент будет наполнен теплом и любовью близких, а твои мечты становятся реальностью. Желаю тебе крепкого здоровья, благополучия и исполнения всех заветных желаний. Пусть каждый твой день будет ярким и незабываемым.🔥",
+      "roomMaxWidth": 86,
+      "roomMaxHeight": 75,
+      "asset": "assets/items/galleons-pouch.png",
+      "originalSize": {
+        "width": 755,
+        "height": 686
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 755,
+        "height": 686
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 755,
+        "height": 686
+      },
+      "size": {
+        "width": 755,
+        "height": 686
+      }
+    },
+    {
+      "file": "sofa.png",
+      "id": "leon-sofa",
+      "name": "Диван",
+      "giver": "Леон Морелло",
+      "gift": "Диван",
+      "congrats": "Касси, с днём рождения! Пусть всё в жизни будет зашибись! Побольше кайфуй и веселись, поменьше работай и расстраивайся. 💖",
+      "roomMaxWidth": 150,
+      "roomMaxHeight": 120,
+      "asset": "assets/items/sofa.png",
+      "originalSize": {
+        "width": 768,
+        "height": 603
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 603
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 603
+      },
+      "size": {
+        "width": 768,
+        "height": 603
+      }
+    },
+    {
+      "file": "money-counter.png",
+      "id": "ariadna-money-counter",
+      "name": "Счётчик денег",
+      "giver": "Ариадна Фрост",
+      "gift": "Машинка для подсчета денег",
+      "congrats": "Дорогая Касси, с днем рождения!\nВосхищаюсь тобой хоть издалека, но много и часто.\n\nБереги себя, girl, ты невероятная  ❤️",
+      "roomMaxWidth": 96,
+      "roomMaxHeight": 86,
+      "asset": "assets/items/money-counter.png",
+      "originalSize": {
+        "width": 768,
+        "height": 755
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 755
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 755
+      },
+      "size": {
+        "width": 768,
+        "height": 755
+      }
+    },
+    {
+      "file": "easel.png",
+      "id": "absinthe-easel",
+      "name": "Мольберт",
+      "giver": "Абсент Нахтвайн",
+      "gift": "Мольберт",
+      "congrats": "У кисти и у волшебной палочки же много общего, верно? И не только то, что они обе — палочки по сути своей.\nИ та, и другая может тыорить магию, а кисть тебя еще и ни в чем не играничивает!\nТвори, дорогая! Поздравляю тебя с Днем рождения. И желаю, чтобы твоя жизнь была яркой и запоминающецся, а если нет — вот тебе, раскрась ее сама!\nПоздравляю!",
+      "roomMaxWidth": 70,
+      "roomMaxHeight": 105,
+      "asset": "assets/items/easel.png",
+      "originalSize": {
+        "width": 432,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 432,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 432,
+        "height": 768
+      },
+      "size": {
+        "width": 432,
+        "height": 768
+      }
+    },
+    {
+      "file": "paint-box.png",
+      "id": "absinthe-paint-box",
+      "name": "Краски",
+      "giver": "Абсент Нахтвайн",
+      "gift": "Краски",
+      "congrats": "У кисти и у волшебной палочки же много общего, верно? И не только то, что они обе — палочки по сути своей.\nИ та, и другая может тыорить магию, а кисть тебя еще и ни в чем не играничивает!\nТвори, дорогая! Поздравляю тебя с Днем рождения. И желаю, чтобы твоя жизнь была яркой и запоминающецся, а если нет — вот тебе, раскрась ее сама!\nПоздравляю!",
+      "roomMaxWidth": 92,
+      "roomMaxHeight": 80,
+      "asset": "assets/items/paint-box.png",
+      "originalSize": {
+        "width": 692,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 692,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 692,
+        "height": 768
+      },
+      "size": {
+        "width": 692,
+        "height": 768
+      }
+    },
+    {
+      "file": "paint-brushes.png",
+      "id": "absinthe-paint-brushes",
+      "name": "Кисти",
+      "giver": "Абсент Нахтвайн",
+      "gift": "Кисти",
+      "congrats": "У кисти и у волшебной палочки же много общего, верно? И не только то, что они обе — палочки по сути своей.\nИ та, и другая может тыорить магию, а кисть тебя еще и ни в чем не играничивает!\nТвори, дорогая! Поздравляю тебя с Днем рождения. И желаю, чтобы твоя жизнь была яркой и запоминающецся, а если нет — вот тебе, раскрась ее сама!\nПоздравляю!",
+      "roomMaxWidth": 64,
+      "roomMaxHeight": 92,
+      "asset": "assets/items/paint-brushes.png",
+      "originalSize": {
+        "width": 490,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 490,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 490,
+        "height": 768
+      },
+      "size": {
+        "width": 490,
+        "height": 768
+      }
+    },
+    {
+      "file": "paint-palette.png",
+      "id": "absinthe-paint-palette",
+      "name": "Палитра",
+      "giver": "Абсент Нахтвайн",
+      "gift": "Палитра",
+      "congrats": "У кисти и у волшебной палочки же много общего, верно? И не только то, что они обе — палочки по сути своей.\nИ та, и другая может тыорить магию, а кисть тебя еще и ни в чем не играничивает!\nТвори, дорогая! Поздравляю тебя с Днем рождения. И желаю, чтобы твоя жизнь была яркой и запоминающецся, а если нет — вот тебе, раскрась ее сама!\nПоздравляю!",
+      "roomMaxWidth": 84,
+      "roomMaxHeight": 70,
+      "asset": "assets/items/paint-palette.png",
+      "originalSize": {
+        "width": 768,
+        "height": 634
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 634
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 634
+      },
+      "size": {
+        "width": 768,
+        "height": 634
+      }
+    },
+    {
+      "file": "peony-bouquet.png",
+      "id": "dino-peony-bouquet",
+      "name": "Букет пионов",
+      "giver": "Диночка",
+      "gift": "Большой букет пионов",
+      "congrats": "Моя любимая девочка! Доця моя! Поздравляю тебя с твоим днем рождения! Желаю тебе, чтобы исполнялись все твои желания! Крепкого здоровья, счастья, много галеонов и прекрасной любви 💖",
+      "roomMaxWidth": 92,
+      "roomMaxHeight": 92,
+      "asset": "assets/items/peony-bouquet.png",
+      "originalSize": {
+        "width": 739,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 739,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 739,
+        "height": 768
+      },
+      "size": {
+        "width": 739,
+        "height": 768
+      }
+    },
+    {
+      "file": "mouse-cheese-toy.png",
+      "id": "vivien-mouse-cheese-toy",
+      "name": "Мышь в сыре",
+      "giver": "Вивьен Джонс",
+      "gift": "Антистресс-хомяк, выпрыгивающий из куска сыра",
+      "congrats": "дорогая Касси, желаю, чтобы в новом для тебя возрасте у тебя появилось всё, чего бы ты в первую очередь сама себе пожелала! больше мудрости, больше \"мне этот мир уже понятен\", и меньше нервотрёпки х)) с праздником!",
+      "roomMaxWidth": 74,
+      "roomMaxHeight": 74,
+      "asset": "assets/items/mouse-cheese-toy.png",
+      "originalSize": {
+        "width": 589,
+        "height": 742
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 589,
+        "height": 742
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 589,
+        "height": 742
+      },
+      "size": {
+        "width": 589,
+        "height": 742
+      }
+    },
+    {
+      "file": "butterbeer-bottle-standing.png",
+      "id": "itas-butterbeer-standing",
+      "name": "Сливочное пиво",
+      "giver": "Итас",
+      "gift": "Охлаждённое сливочное пиво из лимитированной коллекции «С ДР!»",
+      "congrats": "Кастет, Касян, КАсарь! От всей души и сердца поздравляю тебя с днём варенья (не знаю, какое ты любишь, так что пусть будет не банка варенья, а освежающая холодная бутылочка сливочного). Оставайся на подъёме и в тонусе! Желаю, чтобы море было по колено, а горы сами сворачивались, если ты решила что-то сделать и чего-то добиться. С Днём Рождения, мисс Деверо!",
+      "roomMaxWidth": 48,
+      "roomMaxHeight": 118,
+      "asset": "assets/items/butterbeer-bottle-standing.png",
+      "originalSize": {
+        "width": 277,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 277,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 277,
+        "height": 768
+      },
+      "size": {
+        "width": 277,
+        "height": 768
+      }
+    },
+    {
+      "file": "valentine-card.png",
+      "id": "alessandra-valentine-card",
+      "name": "Валентинка",
+      "giver": "Алессандра Куинн",
+      "gift": "Валентинка/открытка",
+      "congrats": "Пусть мы с тобой мало общались, но ты приносишь свет и озорство. Желаю, чтоб солнышко всегда ярко светило для тебя и все дни были радостными.",
+      "roomMaxWidth": 72,
+      "roomMaxHeight": 110,
+      "asset": "assets/items/valentine-card.png",
+      "originalSize": {
+        "width": 415,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 415,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 415,
+        "height": 768
+      },
+      "size": {
+        "width": 415,
+        "height": 768
+      }
+    },
+    {
+      "file": "alessandra-pillow.png",
+      "id": "alessandra-pillow",
+      "name": "Подушка",
+      "giver": "Алессандра Куинн",
+      "gift": "Подушка",
+      "congrats": "Пусть мы с тобой мало общались, но ты приносишь свет и озорство. Желаю, чтоб солнышко всегда ярко светило для тебя и все дни были радостными.",
+      "roomMaxWidth": 112,
+      "roomMaxHeight": 88,
+      "asset": "assets/items/alessandra-pillow.png",
+      "originalSize": {
+        "width": 1402,
+        "height": 1122
+      },
+      "originalBbox": {
+        "x": 277,
+        "y": 222,
+        "width": 852,
+        "height": 662
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 597
+      },
+      "size": {
+        "width": 768,
+        "height": 597
+      }
+    },
+    {
+      "file": "kevin-table.png",
+      "id": "kevin-table",
+      "name": "Стол",
+      "giver": "Кевин Хоукинс",
+      "gift": "Стол",
+      "congrats": "моя дорогая кассичка и ее альтер эго по кликухе \"кастет\"! я невероятно счастлив, что однажды мы столкнулись и решились присмотреться друг к другу получше, а потом совершенно случайным образом поняли, что сходимся. не смотря на всю внешнюю браваду, у меня не такой уж большой список из тех людей, за которых я пошел бы драться, но ты в нем - одна из первых. пусть жизнь подбрасывает тебе как можно больше поводов для радости, волнение будет только из-за чего-то хорошего *ни на что и НИ НА КОГО не намекает*, эльза не будет воровать у тебя вкусную еду и кошмарить тебя с лотком, а все важные и любимые тобой люди всегда будут рядом. бесконечно тебя обожаю!",
+      "roomMaxWidth": 138,
+      "roomMaxHeight": 150,
+      "asset": "assets/items/kevin-table.png",
+      "originalSize": {
+        "width": 1402,
+        "height": 1122
+      },
+      "originalBbox": {
+        "x": 271,
+        "y": 98,
+        "width": 859,
+        "height": 936
+      },
+      "cropBox": {
+        "x": 271,
+        "y": 98,
+        "width": 705,
+        "height": 768
+      },
+      "size": {
+        "width": 705,
+        "height": 768
+      }
+    },
+    {
+      "file": "suitcase.png",
+      "id": "teodor-suitcase",
+      "name": "Чемодан",
+      "giver": "Теодор Саммерс",
+      "gift": "Чемодан",
+      "congrats": "Могли ли мы с тобой подумать даже месяц назад, что я буду именно так тебя поздравлять?\nКасси, дорогая, моя милая девочка, я очень рад в этот твой день рождения держать тебя за руку, задумчиво перебирать волосы и знать, что ты улыбаешься в мое плечо. Я ничего не искал, но все-таки нашел, и оказалось, что ты — единственная, кого я всегда ждал.\nЯ не так много могу написать тебе в публичном поздравлении, я и так уже выдал себя с потрохами перед всей школой. Поэтому запомни: у меня перед тобой должок *тут должна быть черная луна с лицом* Оставайся той прекрасной собой — открытой, честной, иногда смущающейся, а иногда совсем не скромной, смелой, яркой, красивой, забавной, порой строптивой и пытающейся быть грозной. Моей. Я говорил тебе и скажу снова: ты невероятная. Ты — сокровище, которое обычно оставляю для охраны драконам, самое дорогое, самое ценное. А драконы свои сокровища не отдают. Я не отдам.\nТы, как я понял, долго собиралась на свидание. Сколько времени тебе нужно будет, чтобы собрать все вещи? Точно ведь не полдня. Так что начинай уже сейчас, любимая. Время есть. У нас вообще есть с тобой вся жизнь, а я дал тебе свои обещания уже сейчас. С Днем рождения.",
+      "roomMaxWidth": 88,
+      "roomMaxHeight": 112,
+      "asset": "assets/items/suitcase.png",
+      "originalSize": {
+        "width": 621,
+        "height": 768
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 621,
+        "height": 768
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 621,
+        "height": 768
+      },
+      "size": {
+        "width": 621,
+        "height": 768
+      }
+    },
+    {
+      "file": "gabriela-lion-toy.png",
+      "id": "gabriela-lion-toy",
+      "name": "Игрушка льва",
+      "giver": "Gabriela Garcia-de-Nile",
+      "gift": "Игрушка льва",
+      "congrats": "Желаю счастья, любви, свободы, денег(ну как же без них) и много близких сердцу людей в жизни❤️",
+      "roomMaxWidth": 104,
+      "roomMaxHeight": 130,
+      "asset": "assets/items/gabriela-lion-toy.png",
+      "originalSize": {
+        "width": 1402,
+        "height": 1122
+      },
+      "originalBbox": {
+        "x": 443,
+        "y": 193,
+        "width": 564,
+        "height": 705
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 564,
+        "height": 705
+      },
+      "size": {
+        "width": 564,
+        "height": 705
+      }
+    },
+    {
+      "file": "alaric-knuckle-figurine.png",
+      "id": "alaric-knuckle-figurine",
+      "name": "Статуэтка с кастетом",
+      "giver": "Аларик Каслбрук",
+      "gift": "Статуэтка с кастетом",
+      "congrats": "Я не умею красиво говорить (о, ужас, это же очередная банальщина от некреативного человека!!) Но хочу сказать, что она одна из тех, кто реально приукрашивает ХД, разбавляет атмосферу в Гриффиндоре, и вообще вообще везде активна и талантлива, завидую!!!",
+      "roomMaxWidth": 126,
+      "roomMaxHeight": 96,
+      "asset": "assets/items/alaric-knuckle-figurine.png",
+      "originalSize": {
+        "width": 1254,
+        "height": 1254
+      },
+      "originalBbox": {
+        "x": 263,
+        "y": 184,
+        "width": 768,
+        "height": 844
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 699,
+        "height": 768
+      },
+      "size": {
+        "width": 699,
+        "height": 768
+      }
+    },
+    {
+      "file": "wall-shelf-small.png",
+      "id": "litachka-wall-shelf-small",
+      "name": "Малая полка",
+      "giver": "Литачка",
+      "gift": "Настенная полочка для всякой всячины",
+      "congrats": "Кассичка, будь счастлива, и заполни все эти полочки всеми возможными сувенирами! Мы все тебя очень любим! С днём рождения!",
+      "roomMaxWidth": 126,
+      "roomMaxHeight": 82,
+      "asset": "assets/items/wall-shelf-small.png",
+      "originalSize": {
+        "width": 459,
+        "height": 291
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 459,
+        "height": 291
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 459,
+        "height": 291
+      },
+      "size": {
+        "width": 459,
+        "height": 291
+      }
+    },
+    {
+      "file": "wall-shelf-medium.png",
+      "id": "litachka-wall-shelf-medium",
+      "name": "Средняя полка",
+      "giver": "Литачка",
+      "gift": "Настенная полочка для всякой всячины",
+      "congrats": "Кассичка, будь счастлива, и заполни все эти полочки всеми возможными сувенирами! Мы все тебя очень любим! С днём рождения!",
+      "roomMaxWidth": 170,
+      "roomMaxHeight": 92,
+      "asset": "assets/items/wall-shelf-medium.png",
+      "originalSize": {
+        "width": 375,
+        "height": 273
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 273
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 273
+      },
+      "size": {
+        "width": 375,
+        "height": 273
+      }
+    },
+    {
+      "file": "wall-shelf-large.png",
+      "id": "litachka-wall-shelf-large",
+      "name": "Большая полка",
+      "giver": "Литачка",
+      "gift": "Настенная полочка для всякой всячины",
+      "congrats": "Кассичка, будь счастлива, и заполни все эти полочки всеми возможными сувенирами! Мы все тебя очень любим! С днём рождения!",
+      "roomMaxWidth": 210,
+      "roomMaxHeight": 96,
+      "asset": "assets/items/wall-shelf-large.png",
+      "originalSize": {
+        "width": 524,
+        "height": 346
+      },
+      "originalBbox": {
+        "x": 0,
+        "y": 0,
+        "width": 524,
+        "height": 346
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 524,
+        "height": 346
+      },
+      "size": {
+        "width": 524,
+        "height": 346
+      }
+    },
+    {
+      "file": "alias-sandbox.png",
+      "id": "alias-sandbox",
+      "name": "Песочница",
+      "giver": "Алиас Кроу",
+      "gift": "Небольшая песочница",
+      "congrats": "Дорогая Касси. Помнишь, как мы поругались тогда, в песочнице? Там и началась наша дружба. Это не та же самая песочница, конечно, и не тот же песок, но пускай всё равно приносит тебе комфорт и досуг. Желаю тебе всего наилучшего, сестричка. Обнимаю) <3",
+      "roomMaxWidth": 130,
+      "roomMaxHeight": 96,
+      "asset": "assets/items/alias-sandbox.png",
+      "originalSize": {
+        "width": 1254,
+        "height": 1254
+      },
+      "originalBbox": {
+        "x": 115,
+        "y": 240,
+        "width": 1037,
+        "height": 763
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1061,
+        "height": 787
+      },
+      "size": {
+        "width": 1061,
+        "height": 787
+      }
+    },
+    {
+      "file": "lucille-handbag.png",
+      "id": "lucille-handbag",
+      "name": "Сумочка",
+      "giver": "Люсиль Готвольф",
+      "gift": "Аккуратная сумочка с бантом, ручкой и ремешком, которая легко подойдет к разным образам и останется при этом практичной.",
+      "congrats": "С Днём Рождения, Кассия!\nЯ желаю, чтобы в тебе никогда не угасал твой огонёк озорства и, конечно же, всего самого наилучшего. Когда я увидела эту сумочку, я сразу же подумала о тебе. Она не самая яркая и не самая броская, знаешь почему? Потому что даже если очень сильно постараться, невозможно найти что-то ярче и особеннее тебя! Этот аксессуар может подойти практически под любой твой образ, поэтому тебе не придётся подбирать что-то лишь бы она вписалась. Конечно, я люблю, чтобы вещи были не только красивыми, но и практичными, поэтому на неё наложено заклятие расширения. Только тссс, это вроде как не совсем законно",
+      "roomMaxWidth": 126,
+      "roomMaxHeight": 110,
+      "asset": "assets/items/lucille-handbag.png",
+      "originalSize": {
+        "width": 1280,
+        "height": 853
+      },
+      "originalBbox": {
+        "x": 297,
+        "y": 85,
+        "width": 700,
+        "height": 671
+      },
+      "cropBox": {
+        "x": 0,
+        "y": 0,
+        "width": 724,
+        "height": 695
+      },
+      "size": {
+        "width": 724,
+        "height": 695
+      }
+    }
+  ]
+}
